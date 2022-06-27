@@ -2,11 +2,12 @@ import csv
 import os.path
 from datetime import datetime
 from tabulate import tabulate
-
+from comman_data.maling_parameter import recepients_email
+from comman_data.formation_email import *
 
 new_date=datetime.astimezone().strftime('%y-%m-%d %H:%M:%S %Z')
 cur_date=datetime.now()
-receiver=recepiets_email
+receiver=recepients_email
 
 def set_email(id,file_path):
     global html
